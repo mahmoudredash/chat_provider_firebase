@@ -13,9 +13,12 @@ class MyApp extends StatelessWidget {
       title: 'Chat App With Provider and Firebase',
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: Color.fromRGBO(42, 117, 188, 1),
-        accentColor: Color.fromRGBO(42, 117, 188, 1),
-        backgroundColor: Color.fromRGBO(28, 27, 27, 1),
+        colorScheme: ColorScheme.dark(
+        primary: Color.fromRGBO(42, 117, 188, 1),
+        secondary: Color.fromRGBO(42, 117, 188, 1),
+        background: Color.fromRGBO(28, 27, 27, 1),
+      ),
+      scaffoldBackgroundColor: Color.fromRGBO(28, 27, 27, 1),
       ),
 
       home: LoginPage(),
